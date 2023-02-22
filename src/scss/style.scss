@@ -1,2 +1,40 @@
 @import "normalize";
 @import "fonts";
+@import "mixins";
+@import "variables";
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Red Hat Display', sans-serif;
+    background: $background_color;
+}
+
+.wrapper {
+    max-width: 1340px;
+    margin: 0 auto; 
+
+    @media (max-width: 1340px) {
+        padding: 0 30px;
+    }
+}
+
+.about_us {
+    padding: 42px 0;
+    color: #fff;
+
+    h2 {
+        text-transform: capitalize;
+        font-size: 42px;
+        text-decoration: underline;
+    }
+
+    p {
+        font-size: 15px;
+    }
+}
+
+@import "header";

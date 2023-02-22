@@ -9,7 +9,7 @@ export const html = () => {
         message: "Error <%= error.message %>"
     })))
     .pipe(fileinclude())
-    .pipe(app.plugins.replace(/@img\//g, 'img/'))
+    .pipe(app.plugins.replace(/@img\//g, 'images/'))
     .pipe(webpHtmlNosvg())
     .pipe(versionNumber({
         'value': '%DT%',
