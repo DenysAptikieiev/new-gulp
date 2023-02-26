@@ -7,7 +7,25 @@
                             };@font-face {
                                 font-family: RedHatDisplay;
                                 font-display: swap;
+                                src: url("../fonts/RedHatDisplay-Bold.woff2") format("woff2"), url("../fonts/RedHatDisplay-Bold.ttf");
+                                font-weigt: 700;
+                                font-style: normal;
+                            };@font-face {
+                                font-family: RedHatDisplay;
+                                font-display: swap;
                                 src: url("../fonts/RedHatDisplay-BlackItalic.woff2") format("woff2"), url("../fonts/RedHatDisplay-BlackItalic.ttf");
+                                font-weigt: 400;
+                                font-style: normal;
+                            };@font-face {
+                                font-family: RedHatDisplay;
+                                font-display: swap;
+                                src: url("../fonts/RedHatDisplay-BoldItalic.woff2") format("woff2"), url("../fonts/RedHatDisplay-BoldItalic.ttf");
+                                font-weigt: 400;
+                                font-style: normal;
+                            };@font-face {
+                                font-family: RedHatDisplay;
+                                font-display: swap;
+                                src: url("../fonts/RedHatDisplay-ExtraBoldItalic.woff2") format("woff2"), url("../fonts/RedHatDisplay-ExtraBoldItalic.ttf");
                                 font-weigt: 400;
                                 font-style: normal;
                             };@font-face {
@@ -19,25 +37,13 @@
                             };@font-face {
                                 font-family: RedHatDisplay;
                                 font-display: swap;
-                                src: url("../fonts/RedHatDisplay-BoldItalic.woff2") format("woff2"), url("../fonts/RedHatDisplay-BoldItalic.ttf");
+                                src: url("../fonts/RedHatDisplay-Italic.woff2") format("woff2"), url("../fonts/RedHatDisplay-Italic.ttf");
                                 font-weigt: 400;
-                                font-style: normal;
-                            };@font-face {
-                                font-family: RedHatDisplay;
-                                font-display: swap;
-                                src: url("../fonts/RedHatDisplay-Bold.woff2") format("woff2"), url("../fonts/RedHatDisplay-Bold.ttf");
-                                font-weigt: 700;
                                 font-style: normal;
                             };@font-face {
                                 font-family: RedHatDisplay;
                                 font-display: swap;
                                 src: url("../fonts/RedHatDisplay-Light.woff2") format("woff2"), url("../fonts/RedHatDisplay-Light.ttf");
-                                font-weigt: 400;
-                                font-style: normal;
-                            };@font-face {
-                                font-family: RedHatDisplay;
-                                font-display: swap;
-                                src: url("../fonts/RedHatDisplay-ExtraBoldItalic.woff2") format("woff2"), url("../fonts/RedHatDisplay-ExtraBoldItalic.ttf");
                                 font-weigt: 400;
                                 font-style: normal;
                             };@font-face {
@@ -61,13 +67,13 @@
                             };@font-face {
                                 font-family: RedHatDisplay;
                                 font-display: swap;
-                                src: url("../fonts/RedHatDisplay-Italic.woff2") format("woff2"), url("../fonts/RedHatDisplay-Italic.ttf");
+                                src: url("../fonts/RedHatDisplay-Regular.woff2") format("woff2"), url("../fonts/RedHatDisplay-Regular.ttf");
                                 font-weigt: 400;
                                 font-style: normal;
                             };@font-face {
                                 font-family: RedHatDisplay;
                                 font-display: swap;
-                                src: url("../fonts/RedHatDisplay-Regular.woff2") format("woff2"), url("../fonts/RedHatDisplay-Regular.ttf");
+                                src: url("../fonts/RedHatDisplay-SemiBoldItalic.woff2") format("woff2"), url("../fonts/RedHatDisplay-SemiBoldItalic.ttf");
                                 font-weigt: 400;
                                 font-style: normal;
                             };@font-face {
@@ -75,11 +81,5 @@
                                 font-display: swap;
                                 src: url("../fonts/RedHatDisplay-SemiBold.woff2") format("woff2"), url("../fonts/RedHatDisplay-SemiBold.ttf");
                                 font-weigt: 600;
-                                font-style: normal;
-                            };@font-face {
-                                font-family: RedHatDisplay;
-                                font-display: swap;
-                                src: url("../fonts/RedHatDisplay-SemiBoldItalic.woff2") format("woff2"), url("../fonts/RedHatDisplay-SemiBoldItalic.ttf");
-                                font-weigt: 400;
                                 font-style: normal;
                             };

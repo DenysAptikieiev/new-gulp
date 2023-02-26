@@ -9,17 +9,16 @@ export const path = {
         js: `${buildFolder}/js/`,
         scss: `${buildFolder}/css/`,
         html: `${buildFolder}/`,
-        files: `${buildFolder}/files/`,
         images: `${buildFolder}/images/`,
         fonts: `${buildFolder}/fonts/`,
     },
     src: {
         js: `${srcFolder}/js/app.js`,
         images: `${srcFolder}/images/**/*.{jpg,jpeg,png,gif,webp}`,
+        ico: `${srcFolder}/images/**/*.ico`,
         svg: `${srcFolder}/images/**/*.svg`,
         scss: `${srcFolder}/scss/style.scss`,
         html: `${srcFolder}/*.html`,
-        files: `${srcFolder}/files/**/*.*`,
         svgicons: `${srcFolder}/svgicons/*.svg`,
     },
     watch: {
@@ -27,8 +26,8 @@ export const path = {
         js: `${srcFolder}/js/**/*.js`,
         scss: `${srcFolder}/scss/**/*.scss`,
         html: `${srcFolder}/**/*.html`,
-        files: `${srcFolder}/files/**/*.*`,
     },
+    
     clean: buildFolder,
     srcFolder: srcFolder,
     rootFolder: rootFolder,

@@ -1,0 +1,27 @@
+* {
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+    margin: 0;
+}
+
+body {
+    font-family: 'Red Hat Display', sans-serif;
+    background: $background_color;
+}
+
+.wrapper {
+    max-width: 1340px;
+    margin: 0 auto; 
+
+    @media (max-width: 1340px) {
+        padding: 0 30px;
+    }
+}
