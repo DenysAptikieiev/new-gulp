@@ -8,11 +8,16 @@ Swiper.use([Navigation, Pagination ]);
 const swiper = new Swiper('.swiper', {
   direction: 'horizontal',
   loop: true,
+  allowTouchMove: true,
+  autoplay: {
+    delay: 1000,
+  },
 
   breakpoints: {
-        960: {
-        slidesPerView: 2,
-        spaceBetween: 20
+        768: {
+        slidesPerView: 1.5,
+        spaceBetween: 30,
+        allowTouchMove: false,
         },
     },
 
@@ -26,8 +31,6 @@ const swiper = new Swiper('.swiper', {
     prevEl: '.swiper-button-prev',
 },
   autoHeight: true,
-  spaceBetween: 10,
-  allowTouchMove: false,
   mousewheel: {
       invert: true,
   },

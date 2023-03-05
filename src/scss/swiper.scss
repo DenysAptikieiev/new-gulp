@@ -11,10 +11,6 @@
     border-top-left-radius: 8px;
     overflow: hidden;
 
-    img {
-      margin-bottom: 30px;
-    }
-
     .block_img {
       height: 171px;
       display: flex;
@@ -44,7 +40,7 @@
     img {
       width: 100%;
       height: auto;
-
+      margin-bottom: 30px;
     }
 
     h2 {
@@ -56,6 +52,7 @@
       font-weight: 700;
       font-size: 16px;
       line-height: 26px;
+      word-break: break-all;
     }
   }
 
@@ -64,10 +61,30 @@
     top: 170px;
     transform: translateY(-50%);
     display: none;
-    @include for_960() {
+    &::after {
+      content: '';
+      background: url('../images/svg/slider_arrow_icon.svg') no-repeat center / cover;
       display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 60px;
+      height: 60px;
+      opacity: .8;
+    }
+    @include for_768() {
+      display: flex;
+      width: 60px;
     }
   }
 
+  .swiper-button-prev {
+    &::after {
+      transform: rotate(180deg);
+    }
+  }
+
+  .swiper-pagination-bullet {
+    background: white;
+  }
  
 }
