@@ -4,20 +4,30 @@ import Swiper, { Navigation, Pagination } from 'swiper';
 
 Swiper.use([Navigation, Pagination ]);
 
+
 const swiper = new Swiper('.swiper', {
   direction: 'horizontal',
   loop: true,
+
+  breakpoints: {
+        960: {
+        slidesPerView: 2,
+        spaceBetween: 20
+        },
+    },
 
   pagination: {
       el: '.swiper-pagination',
       type: 'bullets',
       clickable: true,
   },
-
-  navigation: false,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+},
   autoHeight: true,
   spaceBetween: 10,
-  allowTouchMove: true,
+  allowTouchMove: false,
   mousewheel: {
       invert: true,
   },

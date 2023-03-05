@@ -20,8 +20,12 @@ body {
 .wrapper {
     max-width: 1340px;
     margin: 0 auto; 
+    padding: 0 30px;
 
-    @media (max-width: 1340px) {
-        padding: 0 30px;
+    // @media (max-width: 1340px) {
+    // }
+
+    @media (min-width: 768px) {
+        padding: 0 60px;
     }
 }

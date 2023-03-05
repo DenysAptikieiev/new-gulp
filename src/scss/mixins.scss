@@ -21,12 +21,28 @@
     ;
 }
 
+@mixin for_1024 {
+    @media (min-width: 1024px) {
+        @content
+    };
+}
+
+@mixin for_1280 {
+    @media (min-width: 1280px) {
+        @content
+    };
+}
+
+@mixin for_1340 {
+    @media (min-width: 1340px) {
+        @content
+    };
+}
+
 @mixin for_960 {
     @media screen and (min-width: 960px) {
         @content
-    }
-
-    ;
+    };
 }
 
 @mixin for_1024 {

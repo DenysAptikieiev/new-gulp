@@ -5,9 +5,16 @@ main {
         text-transform: capitalize;
         font-size: 42px;
         margin-bottom: 30px;
-        
+
         @include gradientDegree(0deg);
         @include textGradient;
+
+        @include for_768() {
+            font-weight: 700;
+            font-size: 46px;
+            line-height: 46px;
+            margin-bottom: 60px;
+        }
     }
 }
 
@@ -20,12 +27,22 @@ main {
         line-height: 27px;
         margin-bottom: 15px;
         color: $main_color;
+
+        @include for_768() {
+            font-size: 20px;
+            line-height: 37px;
+        }
     }
 
     p {
         font-weight: 400;
         font-size: 16px;
         line-height: 26px;
+
+        @include for_768() {
+            font-size: 19px;
+            line-height: 30px;
+        }
 
         &:not(:last-child) {
             margin-bottom: 30px;
@@ -36,7 +53,28 @@ main {
 .our_values {
     padding: 30px 0;
 
+    .our_values_items {
+        @include for_768() {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 60px;
+        }
+
+        @include for_1024() {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+
     .items_value {
+
+        // @include for_768() {
+        //     flex-basis: 50%;
+        // }
+
+        // @include for_1024() {
+        //     flex-basis: 25%;
+        // }
+
         &:not(:last-child) {
             margin-bottom: 30px;
         }
@@ -86,9 +124,9 @@ main {
     @include for_1920 {
         .block_commodities {
             display: flex;
-            justify-content: space-between;
-            align-items: center;
-            gap: 100px;
+            justify-content: flex-end;
+            align-items: flex-start;
+            flex-direction: column;
 
             .content {
                 flex-basis: 50%;
@@ -111,35 +149,22 @@ main {
 
     @include for_960 {
         padding-bottom: 0;
-
-        .line {
-            display: none;
-        }
     }
 
     @include for_1200 {
         padding-bottom: 90px;
-
-        .line {
-            display: none;
-        }
     }
 
     @include for_1920 {
         .block_services {
             display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-direction: row-reverse;
-            gap: 100px;
+            justify-content: flex-start;
+            align-items: flex-start;
+            flex-direction: column;
 
             .content {
                 flex-basis: 50%;
                 text-align: left;
-
-                h2 {
-                    font-size: 42px;
-                }
 
                 p {
                     font-size: 22px;
@@ -152,11 +177,33 @@ main {
 .contacts {
     padding: 30px 0;
 
+    a {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+        color: $main_color;
+        text-decoration: none;
+
+        display: flex;
+        align-items: center;
+
+        &::before {
+            width: 30px;
+            height: 20px;
+            content: url('../images/svg/email.svg');
+        }
+    }
+
     &_map_block {
+        margin-top: 20px;
         @include flex_center;
 
+        @include for_768() {
+            justify-content: flex-start;
+        }
+
         .map {
-            border-radius: 4px;
+            border-radius: 8px;
             width: 100%;
             max-width: 600px;
             min-height: 200px;
