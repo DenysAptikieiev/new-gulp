@@ -1,0 +1,21 @@
+<mjml>
+    <mj-body css-class="mail-body">
+        <mj-section>
+            <mj-column >
+                <mj-text font-family="Roboto" color="#F45E43">
+                    <h1>Title</h1>
+
+                    <p>Paragraph</p>
+                    <p>Another paragraph</p>
+                </mj-text>
+                <mj-spacer height="400px"/>
+                <mj-text font-family="Roboto" color="#F45E43">
+                    <h1>Title</h1>
+
+                    <p>Paragraph</p>
+                    <p>Another paragraph</p>
+                </mj-text>
+            </mj-column>
+        </mj-section>
+    </mj-body>
+</mjml>

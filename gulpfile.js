@@ -17,6 +17,7 @@ import { js } from './gulp/tasks/js.js';
 import { images } from './gulp/tasks/images.js';
 import { otfToTtf, ttfToWoff, fontsStyle } from './gulp/tasks/fonts.js';
 import { svgSprive } from './gulp/tasks/sgvSprive.js';
+import { mjmlConv } from './gulp/tasks/mjml.js';
 
 function watcher() {
     gulp.watch(path.watch.files, copy);
@@ -24,6 +25,7 @@ function watcher() {
     gulp.watch(path.watch.scss, scss);
     gulp.watch(path.watch.js, js);
     gulp.watch(path.watch.images, images);
+    gulp.watch(path.watch.mails, mjmlConv)
 }
 
 export { svgSprive } 
@@ -32,6 +34,6 @@ const fonst = gulp.series(otfToTtf, ttfToWoff, fontsStyle)
 
 const mainTasks = gulp.parallel(fonst, copy, html, scss, js, images)
 
-const dev = gulp.series(reset, mainTasks, gulp.parallel(watcher, server))
+const dev = gulp.series(reset, mainTasks, mjmlConv, gulp.parallel(watcher, server))
 
 gulp.task('default', dev);
