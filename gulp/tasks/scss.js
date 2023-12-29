@@ -26,7 +26,7 @@ export const scss = () => {
     }))
     .pipe(autoprefixer({
         grid: true,
-        overrideBrowserlist: ["last 3 versions"],
+        overrideBrowserlist: ["last 5 versions"],
         cascade: true
     }))
     .pipe(app.gulp.dest(app.path.build.scss))

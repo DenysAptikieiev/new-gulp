@@ -22,4 +22,16 @@
                                 src: url("../fonts/RobotoCondensed-LightItalic.woff2") format("woff2"), url("../fonts/RobotoCondensed-LightItalic.ttf");
                                 font-weigt: 400;
                                 font-style: normal;
+                            };@font-face {
+                                font-family: "Fira Sans";
+                                font-display: swap;
+                                src: url("../fonts/FiraSans-Regular.woff2") format("woff2"), url("../fonts/FiraSans-Regular.ttf");
+                                font-weigt: 400;
+                                font-style: normal;
+                            };@font-face {
+                                font-family: "Abril Fatface";
+                                font-display: swap;
+                                src: url("../fonts/AbrilFatface-Regular.woff2") format("woff2"), url("../fonts/AbrilFatface-Regular.ttf");
+                                font-weigt: 400;
+                                font-style: normal;
                             };
