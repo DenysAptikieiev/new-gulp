@@ -1,0 +1,46 @@
+@mixin column {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+$color_accent: #e1c458;
+
+//media queries
+
+@mixin for_768 {
+  @media screen and (min-width: 768px) {@content};
+}
+
+@mixin for_960 {
+  @media screen and (min-width: 960px) {@content};
+}
+
+@mixin for_1024 {
+  @media screen and (min-width: 1024px) {@content};
+}
+
+@mixin for_1200 {
+  @media screen and (min-width: 1200px) {@content};
+}
+
+@mixin for_1280 {
+  @media screen and (min-width: 1280px) {@content};
+}
+
+@mixin for_1340 {
+  @media screen and (min-width: 1340px) {@content};
+}
+
+@mixin for_1400 {
+  @media screen and (min-width: 1400px) {@content};
+}
+
+@mixin for_1920 {
+  @media screen and (min-width: 1920px) {@content};
+}
