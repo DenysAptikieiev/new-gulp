@@ -37,11 +37,3 @@ const swiper = new Swiper('.swiper', {
 });
 
 flsFunctions.isWebP();
-
-const burger = document.querySelector(".burger");
-const navigation = document.querySelector(".navigation");
-
-burger.addEventListener("click", (e) => {
-    burger.classList.toggle("active");
-    navigation.classList.toggle("navigation_active");
-});
