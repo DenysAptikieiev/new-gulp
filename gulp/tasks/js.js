@@ -1,4 +1,5 @@
 import webpack from 'webpack-stream';
+import uglify from 'gulp-uglify';
 
 export const js = () => {
     return app.gulp.src(app.path.src.js, { sourcemaps: true })
@@ -12,6 +13,7 @@ export const js = () => {
             filename: 'app.min.js',
         }
     }))
+    .pipe(uglify())
     .pipe(app.gulp.dest(app.path.build.js))
     .pipe(app.plugins.browsersync.stream())
 }
