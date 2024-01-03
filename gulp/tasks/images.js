@@ -9,7 +9,9 @@ export const img = () => {
     })))
     .pipe(app.plugins.newer(app.path.build.img))
 
-    .pipe(webp())
+    .pipe(webp({
+        quality: 5,
+    }))
     .pipe(app.gulp.dest(app.path.build.img))
     .pipe(app.gulp.src(app.path.src.img))
     .pipe(app.plugins.newer(app.path.build.img))
