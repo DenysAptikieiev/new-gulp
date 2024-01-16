@@ -1,7 +1,7 @@
 .header {
 	color: rgb(9, 11, 23);
 
-	background-image: url("../img/robson-hatsukami-morgan-NKr0qBAkU4s-unsplash.jpg");
+	background-image: url("../img/rhys-moult-7eaFIKeo1MQ-unsplash.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -160,7 +160,7 @@
 			@media (min-width:768px) {
 				display: flex;
 				justify-content: space-between;
-				gap: 10px
+				gap: 20px
 			}
 
 			a {
@@ -168,7 +168,7 @@
 				font-size: 28px;
 
 				&:hover {
-					color: $accent-color;
+					color: $footer-color;
 				}
 			}
 		}
