@@ -9,10 +9,9 @@ main {
 
     .main-info {
         text-align: center;
-        line-break: loose;
+        background-color: $white;
 
         &_title1 {
-            // font-size: 13px;
             color: $accent-color;
             font-family: 'Fira Sans', sans-serif;
         }
@@ -22,9 +21,11 @@ main {
             font-family: 'Abril Fatface', sans-serif;
             font-weight: 400;
             color: rgb(128, 129, 141);
-            &:hover {
-                color: $blue-bg;
-            }
+        }
+
+        .title_description {
+            font-size: 22px;
+            text-align: left;
         }
 
         &_for {
@@ -136,8 +137,8 @@ main {
             @media (min-width: 1028px) {
                 order: 3;
                 grid-column: 1/2;
-                grid-row: 2/3;
-                align-self: center;
+                grid-row: 4/5;
+                align-self: end;
                 justify-self: start;
                 margin: 0;
             }
@@ -164,7 +165,7 @@ main {
         .block-first {
             @media (min-width: 1028px) {
                 order: 1;
-                grid-row: 1/2;
+                grid-row: 1/4;
             }
         }
 
@@ -176,9 +177,48 @@ main {
         }
     }
 
-    iframe {
+    .map {
+        grid-row: 3/5;
+        grid-column: 2/3;
+        justify-self: end;
         width: 100%;
-        height: 500px;
+        min-height: 300px;
+    }
+
+    .areas {
+        color: $white;
+        h2 {
+            text-align: center;
+            font-size: 33px;
+        }
+
+        .block_lists {
+            display: grid;
+            grid-template-columns:  1fr;
+            row-gap: 30px;
+
+            @media (min-width: 550px) {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            @media (min-width: 768px) {
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+            @media (min-width: 1028px) {
+                grid-template-columns: repeat(4, 1fr);
+            }
+            
+            ul {
+                margin: 0;
+                padding: 0;
+
+                li {
+                    padding: 0;
+                    list-style: none;
+                }
+            }
+        }
     }
 
 }

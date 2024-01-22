@@ -2,16 +2,24 @@
 @import "fonts";
 
 $blue-bg: rgb(71, 120, 170);
-$footer-color: #be3144;
-$accent-color:  #db8a6c;
+$footer-color: #cccccc;
+$accent-color:  #470031;
 $main-bg: rgb(24, 26, 52);
+$white: #FFFFFF;
 
 html {
     scroll-behavior: smooth;
 }
 
+body {
+    background-image: url('../img/backgrounds/marcin-jozwiak-kGoPcmpPT7c-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
 .main_bg {
-    background: $main-bg;
+    background-color: rgba(#000, .5);
 }
 
 .hide {
@@ -19,7 +27,7 @@ html {
 }
 
 .transparent_background {
-    background-color: rgba($accent-color, .8);
+    background-color: rgba($accent-color, 1);
 }
 
 * {
