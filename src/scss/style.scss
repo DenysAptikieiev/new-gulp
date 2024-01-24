@@ -2,8 +2,8 @@
 @import "fonts";
 
 $blue-bg: rgb(71, 120, 170);
-$footer-color: #cccccc;
-$accent-color:  #470031;
+$footer-color: #47688d;
+$accent-color:  #fce38a;
 $main-bg: rgb(24, 26, 52);
 $white: #FFFFFF;
 
@@ -12,7 +12,7 @@ html {
 }
 
 body {
-    background-image: url('../img/backgrounds/marcin-jozwiak-kGoPcmpPT7c-unsplash.jpg');
+    background-image: url('../img/backgrounds/towing.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -32,6 +32,7 @@ body {
 
 * {
     font-family: Roboto, sans-serif;
+    text-wrap: pretty;
 }
 
 a {
