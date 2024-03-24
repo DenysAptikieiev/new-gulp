@@ -1,37 +1,139 @@
 @font-face {
-                                font-family: BriosoPro;
+                                font-family: Inter;
                                 font-display: swap;
-                                src: url("../fonts/BriosoPro-Italic.woff2") format("woff2"), url("../fonts/BriosoPro-Italic.ttf");
+                                src: url("../fonts/Inter-Black.woff2") format("woff2"), url("../fonts/Inter-Black.ttf");
+                                font-weigt: 900;
+                                font-style: normal;
+                            };@font-face {
+                                font-family: Inter;
+                                font-display: swap;
+                                src: url("../fonts/Inter-Bold.woff2") format("woff2"), url("../fonts/Inter-Bold.ttf");
+                                font-weigt: 700;
+                                font-style: normal;
+                            };@font-face {
+                                font-family: Inter;
+                                font-display: swap;
+                                src: url("../fonts/Inter-Medium.woff2") format("woff2"), url("../fonts/Inter-Medium.ttf");
+                                font-weigt: 500;
+                                font-style: normal;
+                            };@font-face {
+                                font-family: Inter;
+                                font-display: swap;
+                                src: url("../fonts/Inter-Light.woff2") format("woff2"), url("../fonts/Inter-Light.ttf");
                                 font-weigt: 400;
                                 font-style: normal;
                             };@font-face {
-                                font-family: RobotoCondensed;
+                                font-family: Inter;
                                 font-display: swap;
-                                src: url("../fonts/RobotoCondensed-Light.woff2") format("woff2"), url("../fonts/RobotoCondensed-Light.ttf");
+                                src: url("../fonts/Inter-Regular.woff2") format("woff2"), url("../fonts/Inter-Regular.ttf");
                                 font-weigt: 400;
                                 font-style: normal;
                             };@font-face {
-                                font-family: RobotoCondensed;
+                                font-family: Inter;
                                 font-display: swap;
-                                src: url("../fonts/RobotoCondensed-Regular.woff2") format("woff2"), url("../fonts/RobotoCondensed-Regular.ttf");
+                                src: url("../fonts/Inter-SemiBold.woff2") format("woff2"), url("../fonts/Inter-SemiBold.ttf");
+                                font-weigt: 600;
+                                font-style: normal;
+                            };@font-face {
+                                font-family: Inter;
+                                font-display: swap;
+                                src: url("../fonts/Inter-Thin.woff2") format("woff2"), url("../fonts/Inter-Thin.ttf");
+                                font-weigt: 100;
+                                font-style: normal;
+                            };@font-face {
+                                font-family: Ramabhadra;
+                                font-display: swap;
+                                src: url("../fonts/Ramabhadra-Regular.woff2") format("woff2"), url("../fonts/Ramabhadra-Regular.ttf");
                                 font-weigt: 400;
                                 font-style: normal;
                             };@font-face {
-                                font-family: RobotoCondensed;
+                                font-family: Roboto;
                                 font-display: swap;
-                                src: url("../fonts/RobotoCondensed-LightItalic.woff2") format("woff2"), url("../fonts/RobotoCondensed-LightItalic.ttf");
+                                src: url("../fonts/Roboto-Black.woff2") format("woff2"), url("../fonts/Roboto-Black.ttf");
+                                font-weigt: 900;
+                                font-style: normal;
+                            };@font-face {
+                                font-family: Roboto;
+                                font-display: swap;
+                                src: url("../fonts/Roboto-BlackItalic.woff2") format("woff2"), url("../fonts/Roboto-BlackItalic.ttf");
                                 font-weigt: 400;
                                 font-style: normal;
                             };@font-face {
-                                font-family: "Fira Sans";
+                                font-family: Roboto;
                                 font-display: swap;
-                                src: url("../fonts/FiraSans-Regular.woff2") format("woff2"), url("../fonts/FiraSans-Regular.ttf");
+                                src: url("../fonts/Roboto-BoldItalic.woff2") format("woff2"), url("../fonts/Roboto-BoldItalic.ttf");
                                 font-weigt: 400;
                                 font-style: normal;
                             };@font-face {
-                                font-family: "Abril Fatface";
+                                font-family: Roboto;
                                 font-display: swap;
-                                src: url("../fonts/AbrilFatface-Regular.woff2") format("woff2"), url("../fonts/AbrilFatface-Regular.ttf");
+                                src: url("../fonts/Roboto-Italic.woff2") format("woff2"), url("../fonts/Roboto-Italic.ttf");
                                 font-weigt: 400;
+                                font-style: normal;
+                            };@font-face {
+                                font-family: Roboto;
+                                font-display: swap;
+                                src: url("../fonts/Roboto-Bold.woff2") format("woff2"), url("../fonts/Roboto-Bold.ttf");
+                                font-weigt: 700;
+                                font-style: normal;
+                            };@font-face {
+                                font-family: Roboto;
+                                font-display: swap;
+                                src: url("../fonts/Roboto-Light.woff2") format("woff2"), url("../fonts/Roboto-Light.ttf");
+                                font-weigt: 400;
+                                font-style: normal;
+                            };@font-face {
+                                font-family: Roboto;
+                                font-display: swap;
+                                src: url("../fonts/Roboto-LightItalic.woff2") format("woff2"), url("../fonts/Roboto-LightItalic.ttf");
+                                font-weigt: 400;
+                                font-style: normal;
+                            };@font-face {
+                                font-family: Roboto;
+                                font-display: swap;
+                                src: url("../fonts/Roboto-Medium.woff2") format("woff2"), url("../fonts/Roboto-Medium.ttf");
+                                font-weigt: 500;
+                                font-style: normal;
+                            };@font-face {
+                                font-family: Inter;
+                                font-display: swap;
+                                src: url("../fonts/Inter-ExtraLight.woff2") format("woff2"), url("../fonts/Inter-ExtraLight.ttf");
+                                font-weigt: 200;
+                                font-style: normal;
+                            };@font-face {
+                                font-family: Roboto;
+                                font-display: swap;
+                                src: url("../fonts/Roboto-MediumItalic.woff2") format("woff2"), url("../fonts/Roboto-MediumItalic.ttf");
+                                font-weigt: 400;
+                                font-style: normal;
+                            };@font-face {
+                                font-family: Roboto;
+                                font-display: swap;
+                                src: url("../fonts/Roboto-ThinItalic.woff2") format("woff2"), url("../fonts/Roboto-ThinItalic.ttf");
+                                font-weigt: 400;
+                                font-style: normal;
+                            };@font-face {
+                                font-family: Roboto;
+                                font-display: swap;
+                                src: url("../fonts/Roboto-Thin.woff2") format("woff2"), url("../fonts/Roboto-Thin.ttf");
+                                font-weigt: 100;
+                                font-style: normal;
+                            };@font-face {
+                                font-family: Artifika;
+                                font-display: swap;
+                                src: url("../fonts/Artifika-Regular.woff2") format("woff2"), url("../fonts/Artifika-Regular.ttf");
+                                font-weigt: 400;
+                                font-style: normal;
+                            };@font-face {
+                                font-family: Roboto;
+                                font-display: swap;
+                                src: url("../fonts/Roboto-Regular.woff2") format("woff2"), url("../fonts/Roboto-Regular.ttf");
+                                font-weigt: 400;
+                                font-style: normal;
+                            };@font-face {
+                                font-family: Inter;
+                                font-display: swap;
+                                src: url("../fonts/Inter-ExtraBold.woff2") format("woff2"), url("../fonts/Inter-ExtraBold.ttf");
+                                font-weigt: 800;
                                 font-style: normal;
                             };

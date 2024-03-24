@@ -1,29 +1,38 @@
 @import "normalize";
 @import "fonts";
 
-$blue-bg: rgb(71, 120, 170);
-$footer-color: #0c056d;
-$accent-color:  #60214b;
-$main-bg: rgb(24, 26, 52);
+:root {
+	--tropical-blue-50: #f1f7fd;
+	--tropical-blue-100: #e0edf9;
+	--tropical-blue-200: #c2ddf5;
+	--tropical-blue-300: #a1cdef;
+	--tropical-blue-400: #74b1e6;
+	--tropical-blue-500: #5394de;
+	--tropical-blue-600: #3f79d1;
+	--tropical-blue-700: #3566c0;
+	--tropical-blue-800: #31539c;
+	--tropical-blue-900: #2c487c;
+	--tropical-blue-950: #1f2d4c;
+	--1: #020d1b;
+	--2: #fff;
+    
+    --font-family: "Roboto", sans-serif;
+    --second-family: "Inter", sans-serif;
+    --third-family: "Artifika", sans-serif;
+    --font3: "Ramabhadra", sans-serif;
+}
 
 html {
     scroll-behavior: smooth;
-}
-
-.main_bg {
-    background: $main-bg;
 }
 
 .hide {
     display: none;
 }
 
-.transparent_background {
-    background-color: rgba($accent-color, .8);
-}
-
 * {
     font-family: Roboto, sans-serif;
+	text-wrap: pretty;
 }
 
 a {

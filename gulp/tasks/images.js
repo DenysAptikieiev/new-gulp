@@ -10,7 +10,7 @@ export const img = () => {
     .pipe(app.plugins.newer(app.path.build.img))
 
     .pipe(webp({
-        quality: 5,
+        quality: 7,
     }))
     .pipe(app.gulp.dest(app.path.build.img))
     .pipe(app.gulp.src(app.path.src.img))
@@ -20,7 +20,7 @@ export const img = () => {
         progressive: true,
         svgoPlugins: [{removeViewBox: false}],
         interlaced: true,
-        optimizationLevel: 4 // 0 to 7
+        optimizationLevel: 7 // 0 to 7
     }))
     .pipe(app.gulp.dest(app.path.build.img))
     .pipe(app.gulp.src(app.path.src.svg))

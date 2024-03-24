@@ -1,37 +1,34 @@
 import * as flsFunctions from "./modules/functions.js";
-// import Swiper, { Navigation, Pagination } from 'swiper';
+import openTab from "./modules/tabs.js"
+import Macy from "macy";
 
 flsFunctions.isWebP();
-console.log("Hello world!");
 
-// const swiper = new Swiper();
-
-const burger = document.querySelector(".header_menu_burger");
-const burgerMenu = document.querySelector(".header_menu_links-list-mobile");
-
-const closeBurgerMenu = (e) => {
-	console.log(e.target);
-	if(e.target.classList.contains("header_menu_burger" || "header_menu_links-list-mobile")) {
-		return
+document.addEventListener("DOMContentLoaded", function() {
+	const tablinks = document.getElementsByClassName("tablinks");
+	for (let i = 0; i < tablinks.length; i++) {
+	  tablinks[i].addEventListener("click", function(event) {
+		const tabName = this.getAttribute("data-index-tab");
+		openTab(event, tabName);
+	  });
 	}
-	if (burger.classList.contains("open")) {
-		burger.classList.remove("open");
-		burgerMenu.classList.remove("open");
-	  }
-}
+  });
 
-const toggleBurgerMenu = () => {
-	if (burger.classList.contains("open")) {
-		burger.classList.remove("open");
-		burgerMenu.classList.remove("open");
-	  } else {
-		burger.classList.add("open");
-		burgerMenu.classList.add("open");
-	  }
-}
-
-burger.addEventListener("click", () => toggleBurgerMenu());
-
-burger.removeEventListener("click", () => toggleBurgerMenu());
-
-window.addEventListener('click', (e) => closeBurgerMenu(e))
+  var masonry = new Macy({
+	container: '#macy-container',
+	trueOrder: true,
+	waitForImages: false,
+	useOwnImageLoader: false,
+	debug: true,
+	mobileFirst: true,
+	columns: 1,
+	margin: {
+		y: 10,
+		x: '18px', 
+	},
+	breakAt: {
+		1200: 2,
+		360: 1
+	},
+});
+  

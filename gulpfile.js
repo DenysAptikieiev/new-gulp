@@ -26,12 +26,12 @@ function watcher() {
     gulp.watch(path.watch.img, img);
 }
 
-export { svgSprive } 
+export { svgSprive, img } 
 
-const fonst = gulp.series(otfToTtf, ttfToWoff, fontsStyle)
+const fonts = gulp.series(otfToTtf, ttfToWoff, fontsStyle)
 
-const mainTasks = gulp.parallel(fonst, copy, html, scss, js, img)
+const mainTasks = gulp.parallel(fonts, copy, html, js, img)
 
-const dev = gulp.series(reset, mainTasks, gulp.parallel(watcher, server))
+const dev = gulp.series(reset, mainTasks, scss, gulp.parallel(watcher, server))
 
 gulp.task('default', dev);
