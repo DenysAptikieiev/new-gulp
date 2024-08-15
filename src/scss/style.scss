@@ -2,8 +2,8 @@
 @import "fonts";
 
 $blue-bg: rgb(71, 120, 170);
-$footer-color: #ffb26b;
-$accent-color:  #1e1b1d;
+$footer-color: #40b9fe;
+$accent-color:  #40b9fe;
 $main-bg: rgb(24, 26, 52);
 
 html {
@@ -19,7 +19,7 @@ html {
 }
 
 .transparent_background {
-    background-color: rgba($accent-color, .8);
+    background-color: rgba($accent-color, .2);
 }
 
 * {
