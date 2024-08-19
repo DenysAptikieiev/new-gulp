@@ -1,6 +1,6 @@
 node_modules
 dist
-gulp/version.json
+/gulp/version.json
 .idea/
 .DS_Store
 src/.DS_Store
